@@ -9,6 +9,7 @@ import { handler as useLogin } from './auth/use-login'
 import { handler as useLogout } from './auth/use-logout'
 import { handler as useSignup } from './auth/use-signup'
 
+export type Provider = typeof localProvider
 export const localProvider = {
   locale: 'en-us',
   cartCookie: 'session',
@@ -18,5 +19,3 @@ export const localProvider = {
   products: { useSearch },
   auth: { useLogin, useLogout, useSignup },
 }
-
-export type LocalProvider = typeof localProvider

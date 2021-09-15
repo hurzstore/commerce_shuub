@@ -1,5 +1,4 @@
 {
-  "provider": "bigcommerce",
   "features": {
     "cart": true,
     "search": true,
